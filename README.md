@@ -1,7 +1,4 @@
-App Engine Java Guestbook
-Copyright (C) 2010-2012 Google Inc.
-
-## Sample guestbook for use with App Engine Java.
+## Sitio que organiza toda la informacion de los GDG de Argentina.
 
 Requires [Apache Maven](http://maven.apache.org) 3.0 or greater, and JDK 6+ in order to run.
 
@@ -22,3 +19,13 @@ For further information, consult the [Java App Engine](https://developers.google
 To see all the available goals for the App Engine plugin, run
 
     mvn help:describe -Dplugin=appengine
+    
+In webapp folder app directory contains the angular client application.
+
+Tools:
+    1) Yeoman ([Howto install Yeoman](http://csrinaldi.blogspot.com.ar/2013/11/construyendo-apliciones-web-modernas.html): 
+    2) Plugin for Angular
+    
+    
+    
+    
