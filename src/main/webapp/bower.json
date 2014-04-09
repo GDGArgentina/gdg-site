@@ -10,7 +10,11 @@
     "angular-resource": "1.2.6",
     "angular-cookies": "1.2.6",
     "angular-sanitize": "1.2.6",
-    "angular-route": "1.2.6"
+    "angular-route": "1.2.6",
+    "platform": "Polymer/platform#~0.2.2",
+    "polymer": "~0.2.2",
+    "polymer-elements": "Polymer/polymer-elements#~0.2.2",
+    "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.2.2"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",
