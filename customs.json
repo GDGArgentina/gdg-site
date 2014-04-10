@@ -1,0 +1,11 @@
+{
+    "elements": {
+        "polymer-ajax": {
+            "attributes": {
+                "handleAs": {},
+                "url": {}
+            }
+        }
+    },
+    "attributes": {}
+}

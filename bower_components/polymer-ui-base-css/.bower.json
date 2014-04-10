@@ -1,0 +1,16 @@
+{
+  "name": "polymer-ui-base-css",
+  "private": true,
+  "dependencies": {},
+  "version": "0.2.2",
+  "homepage": "https://github.com/Polymer/polymer-ui-base-css",
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "d73039e521b3cca7a750f904bc4a42da2d8481bf"
+  },
+  "_source": "https://github.com/Polymer/polymer-ui-base-css.git",
+  "_target": "0.2.2",
+  "_originalSource": "Polymer/polymer-ui-base-css"
+}

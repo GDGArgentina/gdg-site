@@ -1,0 +1,208 @@
+<section id="main">
+    <scroll-area>
+        <polymer-media-query query="min-width: 581px" querymatches="">
+        </polymer-media-query>
+
+        <site-banner class="main-bg bar sticky align-center justify-start flexbox">
+            <polymer-media-query query="max-width: 581px">
+            </polymer-media-query>
+            <template if="{{isPhone &amp;&amp; shortname}}"></template>
+            <polymer-flex-layout align="center" justify="start" style="display: none;">
+
+            </polymer-flex-layout>
+            <a href="/" class="logo" flexbox="">
+                <img src="/images/logo_gdg_devfest.png" height="40px">
+            </a>
+            <h2>GDG Argentina</h2>
+            <app-bar theme="dark" class="bar fixed">
+                <a href="#" class="paper-button " borderless="" sink="">Inicio</a>
+                <a href="#" class="paper-button " borderless="" sink="">Recursos</a>
+                <a href="#" class="paper-button " borderless="" sink="">Eventos</a>
+                <a href="#" class="paper-button " borderless="" sink="">Expertos</a>
+                <a href="#" class="paper-button " borderless="" sink="">Codigo</a>
+                <!-- <a href="#" class="paper-button" borderless sink>News</a> -->
+                <polymer-ui-icon id="menu" on-click="{{ onMenuClick }}" src="http://www.polymer-project.org/images/picons/ic_menu_dark_.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_menu_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                    <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                </polymer-ui-icon>
+                <div id="search" on-click="{{ toggleSearch }}">
+                    <polymer-ui-icon src="http://www.polymer-project.org/images/picons/ic_search_dark_.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_search_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                        <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                    </polymer-ui-icon>
+                    <input type="search" id="input" on-keyup="{{ onKeyPress }}" autocomplete="off">
+                </div>
+            </app-bar>
+            <polymer-ui-icon id="dropdown-toggle" size="35" src="http://www.polymer-project.org/images/picons/ic_arrowDropDown_dark_.png" style="height: 35px; width: 35px; background-image: url(http://www.polymer-project.org/images/picons/ic_arrowDropDown_dark_.png); background-size: 35px; background-position: 50% 50%;">
+                <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+            </polymer-ui-icon>
+
+            <dropdown-panel>
+                <polymer-ui-menu id="mainmenu" on-click="{{ onClick }}" selected="-1">
+                    <polymer-selection id="selection" on-polymer-select="{{ selectionSelect }}">
+                    </polymer-selection>
+
+                    <polymer-ui-menu-item src="http://www.polymer-project.org/images/picons/ic_guide_dark_.png" label="Start" href="http://www.polymer-project.org/docs/start/getting-the-code.html" icon="">
+                        <polymer-ui-icon src="http://www.polymer-project.org/images/picons/ic_guide_dark_.png" icon="" showing="" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_guide_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                            <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                        </polymer-ui-icon>
+                        <span id="label">Inicio
+                        </span>
+                        <a id="link" href="/docs/start/getting-the-code.html"></a>
+                    </polymer-ui-menu-item>
+                    <polymer-ui-menu-item src="/images/picons/ic_book_dark_.png" label="Docs" href="/docs/polymer/polymer.html" icon="">
+                        <polymer-ui-icon src="/images/picons/ic_book_dark_.png" icon="" showing="" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_book_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                            <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                        </polymer-ui-icon>
+                        <span id="label">Recursos
+                        </span>
+                        <a id="link" href="/docs/polymer/polymer.html"></a>
+                    </polymer-ui-menu-item>
+
+                    <polymer-ui-menu-item src="/images/picons/ic_feedback_dark_.png" label="Resources" href="/resources/faq.html" icon="">
+                        <polymer-ui-icon src="/images/picons/ic_feedback_dark_.png" icon="" showing="" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_feedback_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                            <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                        </polymer-ui-icon>
+                        <span id="label">Eventos
+                        </span>
+                        <a id="link" href="/resources/faq.html"></a>
+                    </polymer-ui-menu-item>
+
+                    <polymer-ui-menu-item src="/images/picons/ic_people_dark.png" label="Community" href="/discuss.html" icon="">
+                        <polymer-ui-icon src="/images/picons/ic_people_dark.png" icon="" showing="" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_people_dark.png); background-size: 24px; background-position: 50% 50%;">
+                            <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                        </polymer-ui-icon>
+                        <span id="label">Expertos
+                        </span>
+                        <a id="link" href="/discuss.html"></a>
+                    </polymer-ui-menu-item>
+
+                    <polymer-ui-menu-item src="/images/picons/ic_people_dark.png" label="Community" href="/discuss.html" icon="">
+                        <polymer-ui-icon src="/images/picons/ic_people_dark.png" icon="" showing="" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_people_dark.png); background-size: 24px; background-position: 50% 50%;">
+                            <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                        </polymer-ui-icon>
+                        <span id="label">Codigo
+                        </span>
+                        <a id="link" href="/discuss.html"></a>
+                    </polymer-ui-menu-item>
+
+                    <polymer-ui-arrow direction="up" size="9">
+                        <div id="outer" class="arrow arrow-outer" style="border-width: 9px; border-color: transparent transparent rgb(204, 204, 204);"></div>
+                        <div id="inner" class="arrow arrow-inner" style="border-width: 9px; border-color: transparent transparent rgb(255, 255, 255); top: 1px; left: 0px;"></div>
+                    </polymer-ui-arrow>
+
+                </polymer-ui-menu>
+            </dropdown-panel>
+        </site-banner>
+
+        <main>
+            <section id="future" class="main-bg">
+                <div class="panel left">
+                    <img src="/images/gdg_developer.png">
+                    <summary>
+                        <h1>Quienes conforman el GDG Argentina</h1>
+                        <p>GDG Argentina es un espacio colaborativo integrado por todas las comunidades GDG de Argentina. 
+                            Aquí podrás encontrar información centralizada de todos los eventos del país, expertos en diferentes tecnologías Google, 
+                            material bibliográfico escritos por los expertos y por los miembros de las diferentes comunidades.
+                            Contamos con tu aporte...</p>
+                        <polymer-ui-toolbar class="align-center polymer-ui-light-theme flexbox">
+                            <polymer-flex-layout align="center" style="display: none;">
+                            </polymer-flex-layout>
+
+                            <polymer-media-query query="max-width: 800px">
+                            </polymer-media-query>
+
+                            <a href="http://www.polymer-project.org/docs/start/getting-the-code.html" class="paper-button" data-download-button=""><polymer-ui-icon src="/images/picons/ic_archive_dark_.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_archive_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                                    <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                                </polymer-ui-icon>Quienes Somos?</a>
+                            <a href="http://www.polymer-project.org/docs/start/usingelements.html" class="paper-button"><polymer-ui-icon src="/images/picons/ic_arrowForward_dark_.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_arrowForward_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                                    <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                                </polymer-ui-icon>Te registras?</a>
+                            <!--a href="https://github.com/polymer/polymer" class="paper-button" borderless=""></a-->
+
+                        </polymer-ui-toolbar>
+                    </summary>
+                </div>
+            </section>
+            <section id="everything-element" class="main-purple">
+                <!-- <nav class="bar" flexbox>
+                  <a href="#everything-element" flex>Return to the elegance of the element</a>
+                </nav> -->
+                <div class="panel right">
+                    <summary>
+                        <h1>Nuestro Objetivo</h1>
+                        <p> El objetivo de la comunidad de GDG de Argentina es brindar un espacio común donde se puedan compartir todas las experiencias en el uso de tecnología Google, acorde con el programa GDG.
+                            Pretendemos que la información de todas las comunidades GDG de Argentina, se vean mapeadas en un único lugar, permitiendo el fácil acceso a los desarrolladores, emprendedores, etc.
+                            <br/>
+                            <br/>
+                            <i>Quieres sumarte a este desafío?</i>
+                            <br/>
+                            <br/>
+                            <a href="/docs/start/everything.html" class="paper-button" borderless="">
+                                <polymer-ui-icon src="/images/picons/ic_arrowForward_light.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_arrowForward_light.png); background-size: 24px; background-position: 50% 50%;">
+                                    <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+                                </polymer-ui-icon>Registrate</a>
+                        </p>
+                    </summary>
+                    <img src="/images/delivered-innovation-250.png">
+                </div>
+            </section>
+            <section id="architecture">
+                <!--  <nav class="bar" flexbox>
+                   <a href="#architecture">The architecture of Polymer</a>
+                 </nav> -->
+                <div class="panel">
+                    <summary>
+                        <div class="box">
+                            <img src="/images/doc.png">
+                        </div>
+                        <h1 class="elements-using">Tutoriales</h1>
+                        <h5>Seccion de documentacions</h5>
+                        <p>En esta seccion podrás encontrar información con distintos niveles de las APIs de Google y estandares actuales.</p>
+                        <a href="/docs/start/usingelements.html" class="paper-button" borderless=""><polymer-ui-icon src="/images/picons/ic_arrowForward_dark_.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_arrowForward_dark_.png); background-size: 24px; background-position: 50% 50%;">
+                                <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+
+                            </polymer-ui-icon>
+                            Ingresa a Tutoriales
+                        </a>
+                        
+                        
+                    </summary>
+
+                    <summary>
+                        <div class="box">
+                            <img src="/images/events.png">
+                        </div>
+                        <h1 class="elements-creating">Eventos</h1>
+                        <h5>Donde ocurren las cosas?</h5>
+                        <p>Entra y entérate de todos los eventos de la comunidad de GDGs de Argentina.</p>
+                        <a href="/docs/start/creatingelements.html" class="paper-button" borderless=""><polymer-ui-icon src="/images/picons/ic_arrowForward_dark_.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_arrowForward_dark_.png); background-size: 24px; background-position: 50% 50%;">
+
+                                <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+
+                            </polymer-ui-icon>Participa ya!!</a>
+                    </summary>
+                    <summary>
+                        <div class="box">
+                            <img src="/images/expert.png">
+                        </div>
+                        <h1 class="platform">Expertos</h1>
+                        <h5>Quienes me puede ayudar?</h5>
+                        <p>Quieres experiencia? Necesitas ayuda puntual? Entra en esta sección y te enterarás del poder que tiene la región en manos de los Expertos..</p>
+                        <a href="/docs/start/platform.html" class="paper-button" borderless=""><polymer-ui-icon src="/images/picons/ic_arrowForward_dark_.png" style="height: 24px; width: 24px; background-image: url(http://www.polymer-project.org/images/picons/ic_arrowForward_dark_.png); background-size: 24px; background-position: 50% 50%;">
+
+                                <polymer-ui-iconset id="meta"></polymer-ui-iconset>
+
+                            </polymer-ui-icon>Expertos</a>
+                    </summary>
+                </div>
+            </section>
+            <!-- <section id="quickstart">
+              <div class="panel">
+                <summary>
+                  <p>content here</p>
+                </summary>
+              </div>
+            </section>
+            -->
+        </main>
+    </scroll-area>
+</section>

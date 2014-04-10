@@ -1,0 +1,62 @@
+<link rel="import" href="/bower_components/polymer/polymer.html">
+
+<polymer-element name="google-signin" 
+                 attributes="
+                 elementId
+                 clientId 
+                 scopes
+                 actions
+                 successCallback
+                 failureCallback">
+    <template>
+        <style>
+            :host {
+                display: block;
+            }
+        </style>
+        <span id="signinButton">
+            <span
+                class="g-signin"
+                data-callback="signinCallback"
+                data-clientid="{{clientId}}"
+                data-cookiepolicy="single_host_origin"
+                data-requestvisibleactions="{{actions}}"
+                data-scope="{{scopes}}">
+            </span>
+        </span>
+    </template>
+    <script>
+
+
+
+
+        //TODO preguntar si esta
+        Polymer('google-signin', {
+            elementId: "signinButton",
+            clientId: "",
+            scopes: ["https://www.googleapis.com/auth/plus.login"],
+            actions: ["http://schemas.google.com/AddActivity"],
+            ready: function() {
+                console.log(this.clientId);
+                console.log("LoginButton Ready for use");
+            },
+            signinCallback: function(authResult) {
+                if (authResult['status']['signed_in']) {
+                    this.onSuccess(authResult);
+                } else {
+                    this.onFailure(authResult);
+                    console.log('Sign-in state: ' + authResult['error']);
+                }
+            },
+            onSuccess: function() {
+                document.getElementById(this.id).setAttribute('style', 'display: none');
+            },
+            onFailure: function() {
+                console.log("Error");
+            }
+        });
+
+
+
+    </script>
+</polymer-element>

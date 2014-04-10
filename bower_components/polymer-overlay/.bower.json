@@ -1,0 +1,20 @@
+{
+  "name": "polymer-overlay",
+  "private": true,
+  "dependencies": {
+    "polymer-animation": "Polymer/polymer-animation#0.2.2",
+    "polymer": "Polymer/polymer#0.2.2",
+    "polymer-key-helper": "Polymer/polymer-key-helper#0.2.2"
+  },
+  "version": "0.2.2",
+  "homepage": "https://github.com/Polymer/polymer-overlay",
+  "_release": "0.2.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.2.2",
+    "commit": "1d20a597c5a650cf50e9a3668fe439d67d1fc184"
+  },
+  "_source": "https://github.com/Polymer/polymer-overlay.git",
+  "_target": "0.2.2",
+  "_originalSource": "Polymer/polymer-overlay"
+}
