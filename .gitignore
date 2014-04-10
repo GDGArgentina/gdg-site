@@ -5,3 +5,4 @@ dist
 app/bower_components
 /target/
 /src/main/webapp/nbproject/private/
+/nbproject/
