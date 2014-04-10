@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('webappApp', [
+var app = angular.module('webappApp', [
   'ngCookies',
   'ngResource',
   'ngSanitize',
@@ -16,3 +16,11 @@ angular.module('webappApp', [
         redirectTo: '/'
       });
   });
+  
+  app.onSuccess = function(response){
+      console.log("onSucess");
+  };
+  
+  app.onFailure = function(response){
+      console.log("onSucess");
+  }

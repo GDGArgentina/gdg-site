@@ -28,7 +28,7 @@
         <style element="polymer-collapse-controller">
             polymer-ui-submenu-item .polymer-collapse-closed {
                 display:"";
-        }
+            }
         </style>
         <style element="polymer-collapse-controller">
             polymer-ui-submenu-item .polymer-collapse-closed {
@@ -1278,20 +1278,27 @@
         <meta itemprop="name" content="GDD Argentina Polymer Full">
 
         <!--meta itemprop="image" content="http://www.polymer-project.org/images/instacod.png"-->
-
         <!--title>Using elements - Polymer</title-->
         <!--link rel="publisher" href="https://plus.google.com/107187849809354688692"-->
         <!--link rel="shortcut icon" href="http://www.polymer-project.org/images/logos/p-logo-16.png"-->
+
+
         <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300italic,600,800|Source+Code+Pro" rel="stylesheet">
         <link rel="stylesheet" href="http://www.polymer-project.org/css/homepage.css">
-        <link href="http://www.polymer-project.org/css/site2.css?20140404" rel="stylesheet">
+        <link rel="stylesheet" href="http://www.polymer-project.org/css/site2.css?20140404">
+
+        <script type="text/javascript" src="/bower_components/platform/platform.js"></script>
+        <!--script src="http://www.polymer-project.org/platform.js?20140404"></script-->
+        <!--link rel="import" href="http://www.polymer-project.org/components/polymer/polymer.html"/-->
+        <!--link rel="import" href="http://www.polymer-project.org/elements/common_elements.vulcanized.html?20140404"-->
+
+        <link rel="import" href="/bower_components/polymer-media-query/polymer-media-query.html">
+        <link rel="import" href="/bower_components/polymer-elements/polymer-elements.html"/>
+        <link rel="import" href="/bower_components/polymer-ui-elements/polymer-ui-elements.html"/>
+        <link rel="import" href="/components/google-signin.html">
 
 
-        <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script><script src="/platform.js?20140404"></script>
-        <!-- TODO: remove when https://github.com/Polymer/polymer/issues/391 is fixed -->
-        <script type="text/javascript" src="app/bower_components/platform/platform.js"></script>
-        <link rel="import" href="http://www.polymer-project.org/components/polymer/polymer.html"/>
-        <link rel="import" href="http://www.polymer-project.org/elements/common_elements.vulcanized.html?20140404">
+        <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
 
         <!-- endbuild -->
     </head>
@@ -1332,7 +1339,11 @@
                             <polymer-ui-iconset id="meta"></polymer-ui-iconset>
                         </polymer-ui-icon>Encontraste un Bug?</a>
                 </polymer-ui-toolbar>
+
                 <p id="copyright">© 2014 GDG Argentina.</p>
+                <google-signin 
+                            clientId="327767153055-hah75rp7m8lh2pvbgh3s4qqj8jh2alb9.apps.googleusercontent.com">
+                </google-signin>
             </div>
         </footer>
 
@@ -1375,5 +1386,16 @@
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
         <!-- endbuild -->
+
+        <script type="text/javascript">
+            (function() {
+                var po = document.createElement('script');
+                po.type = 'text/javascript';
+                po.async = true;
+                po.src = 'https://apis.google.com/js/client:plusone.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+        </script>
     </body>
 </html>

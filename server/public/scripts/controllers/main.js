@@ -7,4 +7,13 @@ angular.module('webappApp')
       'AngularJS',
       'Karma'
     ];
+    
+    $scope.onSuccess = function(response){
+        
+    };
+    
+    $scope.onFailure = function(response){
+        
+    };
+    
   });
