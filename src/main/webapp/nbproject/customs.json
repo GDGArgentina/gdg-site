@@ -1,0 +1,8 @@
+{
+    "elements": {
+        "polymer-ajax": {},
+        "app-drawer": {},
+        "polymer-media-query": {}
+    },
+    "attributes": {}
+}
