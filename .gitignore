@@ -4,3 +4,4 @@ dist
 .sass-cache
 app/bower_components
 /target/
+/src/main/webapp/nbproject/private/
