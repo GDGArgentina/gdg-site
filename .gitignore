@@ -1,8 +1,5 @@
 node_modules
-dist
 .tmp
 .sass-cache
-app/bower_components
-/target/
-/src/main/webapp/nbproject/private/
+public/bower_components
 /nbproject/
