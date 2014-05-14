@@ -1,25 +1,6 @@
 ## Sitio que organiza toda la informacion de los GDG de Argentina.
 
-Requiere [Apache Maven](http://maven.apache.org) 3.0 o mayor, y JDK 6+.
-
-Para construir el proyecto
-
-    mvn package
-
-Construcción del proyecto con corrida de test
-
-    mvn test
-
-Iniciar la app, usar el plugin de maven [App Engine Maven Plugin](http://code.google.com/p/appengine-maven-plugin/) incluido en el proyecto, corriendo el comando:
-
-    mvn appengine:devserver
-
-Para mas información, consulte la documentación de [Java App Engine](https://developers.google.com/appengine/docs/java/overview).
-
-Para ver todos los goals que provee el plugin, ejecutar la siguiente línea:
-
-    mvn help:describe -Dplugin=appengine
-    
+El site esta construido con NODE JS en el servidor
 
 #Configuración del cliente
 
