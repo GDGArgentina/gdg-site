@@ -2,6 +2,8 @@
 
 El site esta construido con NODE JS en el servidor
 
+//TODO
+
 #Configuración del cliente
 
 La aplicación cliente esta basada en AngularJS, para la creación del proyecto cliente se utiliza Yeoman (Yo, Bower, Grunt).
