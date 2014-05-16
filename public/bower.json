@@ -6,7 +6,7 @@
     "json3": "~3.2.6",
     "es5-shim": "~2.1.0",
     "jquery": "~1.10.2",
-    "bootstrap": "~3.0.3",
+    "bootstrap": "~3.1.1",
     "angular-resource": "1.2.6",
     "angular-cookies": "1.2.6",
     "angular-sanitize": "1.2.6",
@@ -14,7 +14,9 @@
     "angular-ui-router": "~0.2.10",
     "platform": "Polymer/platform#~0.2.4",
     "core-elements": "Polymer/core-elements#~0.2.4",
-    "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.2.4"
+    "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.2.4",
+    "polymer-ui-sidebar-menu": "Polymer/polymer-ui-sidebar-menu#~0.2.4",
+    "modernizr": "~2.8.1"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",
