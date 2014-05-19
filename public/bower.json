@@ -2,24 +2,25 @@
   "name": "webapp",
   "version": "0.0.0",
   "dependencies": {
-    "angular": "1.2.6",
+    "angular": "1.2.16",
     "json3": "~3.2.6",
     "es5-shim": "~2.1.0",
     "jquery": "~1.10.2",
     "bootstrap": "~3.1.1",
-    "angular-resource": "1.2.6",
-    "angular-cookies": "1.2.6",
-    "angular-sanitize": "1.2.6",
-    "angular-route": "1.2.6",
+    "angular-resource": "1.2.16",
+    "angular-cookies": "1.2.16",
+    "angular-sanitize": "1.2.16",
+    "angular-route": "1.2.16",
     "angular-ui-router": "~0.2.10",
     "platform": "Polymer/platform#~0.2.4",
     "core-elements": "Polymer/core-elements#~0.2.4",
     "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.2.4",
     "polymer-ui-sidebar-menu": "Polymer/polymer-ui-sidebar-menu#~0.2.4",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "angular-animate": "~1.2.16"
   },
   "devDependencies": {
-    "angular-mocks": "1.2.6",
-    "angular-scenario": "1.2.6"
+    "angular-mocks": "1.2.16",
+    "angular-scenario": "1.2.16"
   }
 }

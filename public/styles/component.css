@@ -17,7 +17,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    visibility: hidden;
+    /*visibility: hidden;*/
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
